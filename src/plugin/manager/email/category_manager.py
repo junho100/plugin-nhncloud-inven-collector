@@ -36,7 +36,7 @@ class CategoryManager(NHNCloudBaseManager):
         category_connector = CategoryConnector()
 
         categories = []
-        if secret_data.get("email_secret_key") is not None:
+        if hasattr(secret_data, "email_secret_key"):
             categories = category_connector.list_categories(secret_data.get("app_key"), secret_data.get("email_secret_key"))
 
         for category in categories:
