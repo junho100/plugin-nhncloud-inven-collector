@@ -27,7 +27,8 @@ class PushTokenManager(NHNCloudBaseManager):
             is_major=True,
             tags={
                 "spaceone:icon": f"{ASSET_URL}/push.png"
-            }
+            },
+            labels=["Management"]
         )
 
         return cloud_service_type

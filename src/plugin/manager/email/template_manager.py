@@ -27,7 +27,8 @@ class TemplateManager(NHNCloudBaseManager):
             is_major=True,
             tags={
                 "spaceone:icon": f"{ASSET_URL}/email.png"
-            }
+            },
+            labels=["Management"]
         )
 
         return cloud_service_type

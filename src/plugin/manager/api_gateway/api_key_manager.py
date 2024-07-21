@@ -28,7 +28,8 @@ class APIKeyManager(NHNCloudBaseManager):
             is_major=True,
             tags={
                 "spaceone:icon": f"{ASSET_URL}/api_gateway.png"
-            }
+            },
+            labels=["Application Integration"]
         )
 
         return cloud_service_type
